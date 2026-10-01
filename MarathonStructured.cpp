@@ -29,9 +29,12 @@ int main()
 
     int runnerCount = readRunnerData(runners);
 
+    if (runnerCount > 0)
+    {
     calculateTotalsAndAverages(runners, runnerCount,totals ,averages);
 
     displayResults(runners, runnerCount, totals, averages);
+    };
 
     return 0;
 }
